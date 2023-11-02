@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
     <title>Cyber Security Services</title>
+    <link rel = "icon" href = "https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/Logo.png?raw=true" type = "image/x-icon">
+
 </head>
-<body>
+<style>
+  *{
+  overflow-x: hidden;
+  }
+</style>
+<body >
    <!-- navbar start -->
         <div class="sticky top-0 border-b shadow-sm bg-white z-30">
             <nav class="flex items-center justify-between mx-4">
@@ -55,7 +62,7 @@
                 isOpen = !isOpen;
                 if (isOpen) {
                     // Change the icon to a cross (X)
-                    burgerIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>`;
+                    burgerIcon.innerHTML = <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>;
                     // Show the mobile menu and set the background color to white
                     menuListMobile.classList.remove("hidden");
                     menuListMobile.classList.add("translate-y-0");
@@ -64,7 +71,7 @@
                     window.scrollTo(0, 0);
                 } else {
                     // Change the icon back to a burger
-                    burgerIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>`;
+                    burgerIcon.innerHTML = <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>;
                     // Hide the mobile menu and reset the background color
                     menuListMobile.classList.add("hidden");
                     menuListMobile.classList.remove("translate-y-0");
@@ -74,22 +81,23 @@
         </script>
     <!-- navbar close -->
     <div style="background-image: url('https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/cyber.png?raw=true');">
-        <div class="text-blue-700 text-7xl font-normal pt-44 px-56 pb-44">
+        <div class="text-blue-700 text-2xl font-normal pt-44 px-56 pb-44 -ml-56 text-2xl md:text-5xl text-center" >
             Cyber Security Services
         </div>
     </div>
-    <div class="text-blue-700 text-4xl font-normal leading-relaxed mt-12 mx-20">
+    <div class="-ml-8  md:w-full " style="">
+        <div class="text-blue-700 text-3xl font-normal leading-relaxed mt-12 mx-20  md:w-full " style="color: #FFA500;">
         Protect Your Digital Assets. Choose Yugaas Tech's Cyber Security Services.
     </div>
     <div class=" mt-24 ml-20">
-        <div class="text-blue-700 text-5xl font-normal">| Overview</div>
-        <div class="text-black text-2xl font-normal mt-14">
+        <div class="text-blue-700 text-4xl font-normal  md:text-4xl h-16 ">| Overview</div>
+        <div class="text-black md:text-2xl font-normal mt-14 md:w-full text-2xl mr-4 ">
             In an increasingly interconnected and digital world, cybersecurity is a critical aspect of business resilience. At Yugaas Tech, we offer comprehensive Cyber Security Services that safeguard organizations against cyber threats, protect sensitive data, and ensure regulatory compliance. Our proactive and adaptive approach to cybersecurity empowers businesses to stay one step ahead of potential risks and vulnerabilities, enabling them to focus on their core objectives with confidence.
         </div>
         
     </div>
     <div class="mt-24 ml-20">
-        <div class="text-blue-700 text-5xl font-normal">
+        <div class="text-blue-700 text-4xl font-normal md:text-4xl md:h-12 h-28">
             | Security Advisory and Roadmap
         </div>
         <div class="text-black text-2xl font-normal mt-14">
@@ -97,7 +105,7 @@
         </div>
     </div> 
     <div class="mt-24 ml-20">
-        <div class="text-blue-700 text-5xl font-normal">
+        <div class="text-blue-700 text-4xl font-normal md:text-4xl h-12" >
             | Security Technology Implementation and Management
         </div>
         <div class="text-black text-2xl font-normal mt-14">
@@ -105,7 +113,7 @@
         </div>
     </div>  
     <div class="mt-24 ml-20">
-        <div class="text-blue-700 text-5xl font-normal">
+        <div class="text-blue-700 text-4xl font-normal md:text-4xl md:h-12 h-24">
             | Security Testing (VAPT, Red Teaming, etc.)
         </div>
         <div class="text-black text-2xl font-normal mt-14">
@@ -113,7 +121,7 @@
         </div>
     </div> 
     <div class="mt-24 ml-20">
-        <div class="text-blue-700 text-5xl font-normal">
+        <div class="text-blue-700 text-4xl font-normal md:text-4xl md:h-12 h-20">
             | Governance, Risk, and Compliance
         </div>
         <div class="text-black text-2xl font-normal mt-14">
@@ -121,7 +129,7 @@
         </div>
     </div>
     <div class="mt-24 ml-20">
-        <div class="text-blue-700 text-5xl font-normal">
+        <div class="text-blue-700 text-4xl font-normal md:text-4xl md:h-12 h-20">
             | End to End Managed Security Services
         </div>
         <div class="text-black text-2xl font-normal mt-14">
@@ -129,7 +137,7 @@
         </div>
     </div>
     <div class="mt-24 ml-20">
-        <div class="text-blue-700 text-5xl font-normal">
+        <div class="text-blue-700 text-4xl font-normal md:text-4xl md:h-12 h-20">
             | Security Audit and Assurance
         </div>
         <div class="text-black text-2xl font-normal mt-14">
@@ -137,55 +145,57 @@
         </div>
     </div>
     <div class="mt-24 ml-32">
-        <div class="text-blue-700 text-5xl font-normal">
+        <div class="text-blue-700 text-4xl font-normal md:text-4xl h-16">
             | Key Benefits
         </div>
-        <div class="text-blue-700 text-4xl font-normal mt-12">
+        <div class="text-blue-700 text-3xl font-normal mt-12 md:text-4xl md:h-12 h-20">
             1. Proactive Cyber Threat Protection
         </div>
-        <div class="text-black text-2xl font-normal mt-12">
+        <div class="text-black text-2xl font-normal mt-12 ">
             Our Cyber Security Services offer proactive measures to protect organizations from a wide range of cyber threats, safeguarding their assets and sensitive data.
         </div>
-        <div class="text-blue-700 text-4xl font-normal mt-12">
+        <div class="text-blue-700 text-3xl font-normal mt-12 md:text-4xl md:h-12 h-20">
             2. Tailored Security Roadmaps
         </div>
-        <div class="text-black text-2xl font-normal mt-12">
+        <div class="text-black text-2xl font-normal mt-12 ">
             With Security Advisory and Roadmap, businesses gain personalized cybersecurity roadmaps that prioritize their unique security needs and challenges.
         </div>
-        <div class="text-blue-700 text-4xl font-normal mt-12">
+        <div class="text-blue-700 text-3xl font-normal mt-12 md:text-4xl md:h-12 h-20">
             3. Optimized Security Technology
         </div>
-        <div class="text-black text-2xl font-normal mt-12">
+        <div class="text-black text-2xl font-normal mt-12 ">
             Security Technology Implementation and Management ensure seamless integration and efficient management of security tools, enhancing overall security efficacy.
         </div>
-        <div class="text-blue-700 text-4xl font-normal mt-12">
+        <div class="text-blue-700 text-3xl font-normal mt-12 md:text-4xl md:h-12 h-28">
             4. Identification and Mitigation of Vulnerabilities
         </div>
-        <div class="text-black text-2xl font-normal mt-12">
+        <div class="text-black text-2xl font-normal mt-12 ">
             Security Testing services identify and address vulnerabilities, enabling organizations to bolster their defence mechanisms and prevent potential attacks.
         </div>
-        <div class="text-blue-700 text-4xl font-normal mt-12">
+        <div class="text-blue-700 text-3xl font-normal mt-12 md:text-4xl md:h-12 h-20">
             5. Compliance and Trust
         </div>
-        <div class="text-black text-2xl font-normal mt-12">
+        <div class="text-black text-2xl font-normal mt-12 ">
             Through Governance, Risk, and Compliance services, businesses demonstrate compliance with regulations, build trust with stakeholders, and protect their brand reputation.
         </div>
-        <div class="text-blue-700 text-4xl font-normal mt-12">
+        <div class="text-blue-700 text-3xl font-normal mt-12 md:text-4xl md:h-12 h-28">
             6. 24/7 Security Monitoring and Incident Response
         </div>
         <div class="text-black text-2xl font-normal mt-12">
             End to End Managed Security Services offer continuous monitoring and rapid incident response, minimizing the impact of potential security breaches.
         </div>
-        <div class="text-blue-700 text-4xl font-normal mt-12">
+        <div class="text-blue-700 text-3xl font-normal mt-12 md:text-4xl md:h-12 h-20">
             7. Data-Driven Decision-Making
         </div>
         <div class="text-black text-2xl font-normal mt-12">
             Security Audit and Assurance provide comprehensive insights that guide organizations in making informed decisions to strengthen their security posture.
         </div>
-    </div>
-    <div class="text-black text-3xl font-normal mt-32 mx-24">
+    </div><br>
+    <div class="text-black text-2xl font-normal mt-32 mx-24 -mt-2 pb-8 pl-2 w-96 md:w-full" >
         At Yugaas Tech, we are committed to providing top-notch Cyber Security Services that enable businesses to navigate the digital landscape securely and confidently. With our proactive approach and advanced security solutions, we stand as a trusted partner in safeguarding our clients' assets, data, and reputation from the ever-evolving cyber threats.
     </div>
+
+</div>
     {% include 'footer.html' %}
 </body>
 </html>
