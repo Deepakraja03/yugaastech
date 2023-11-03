@@ -6,11 +6,11 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
     <link rel = "icon" href = "https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/Logo.png?raw=true" type = "image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
+
     <title>yugaastech</title>
     <style>
-      *{
-        overflow-x: hidden;
-      }
+     
     </style>
 </head>
 <body style="overflow-x: hidden;">
@@ -19,13 +19,14 @@
     AOS.init();
   </script>
       <!-- navbar start -->
-    <div class="sticky top-0 border-b shadow-sm bg-white z-30">
+    <div class="sticky top-0 border-b shadow-sm bg-white z-30" style="font-family: 'Poppins', sans-serif;">
       <nav class="flex items-center justify-between mx-4">
           <!-- left -->
           <div class="flex items-center space-x-4 pt-3">
               <img class="h-20 cursor-pointer" src="https://raw.githubusercontent.com/Deepakraja03/yugaastech/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/Logo.jpg?raw=true" alt="logo">
+              <p class=" hidden md:inline font-bold pb-4 text-3xl text-blue-800 ">yugaas<span class=" font-bold" style="color: #FFA500;">tech</span></p>
           </div>
-          <ul class="hidden lg:inline lg:flex text-lg font-bold px-10">
+          <ul class="hidden lg:inline text-lg font-bold px-10">
               <div class="md:flex">
                   <li class="px-3  py-1" ><a href="../Home">Home</a></li>
                   <li class="px-3 py-1"><a href="../About"> About Us</a></li>
@@ -47,7 +48,7 @@
   <div id="bg-overlay" class="fixed top-0 left-0 right-0 bg-white opacity-0 transition-opacity duration-300 h-[100hv] lg:bg-transparent lg:pt-0"></div>
   
   <!-- Mobile menu links with black text (initially displayed on lg:screen) -->
-  <ul id="menu-list-mobile" class="pt-32 flex flex-col text-lg font-bold px-10 absolute top-0 left-0 right-0 h-screen bg-white transform -translate-y-[500hv] transition-transform duration-300 hidden">
+  <ul id="menu-list-mobile" class="pt-32 flex-col text-lg font-bold px-10 absolute top-0 left-0 right-0 h-screen bg-white transform -translate-y-[500hv] transition-transform duration-300 hidden" style="font-family: 'Poppins', sans-serif;">
       <li class="underline hover:scale-110 transition-shadow duration-150 ease-out py-1" style="color: #FFA500;"><a href="#">Home</a></li>
       <li class="py-1"><a href="../About"> About Us</a></li>
       <li class="py-1"><a href="../OurServices">Our Services</a></li>
@@ -86,314 +87,134 @@
   
   
   <!-- navbar close -->
- 
-  <div class="hidden  bg-blue-900 w-full md:w-auto h-auto rounded-r-full text-justify" style="border-radius: 0px 900px 900px 0px; height: 586px; flex-shrink: 0; background: #12192E;">
-    <div class="servicess md:text-4xl text-orange-500 font-krona text-4xl py-16 px-6 md:w-427 md:h-93" style="color: #FFA500; width: 427px; height: 93px; font-family: Krona One; font-size: 48px; font-style: normal; font-weight: 400; line-height: normal;">
-        Our Services
-    </div>
-    <div class=" text-white font-krona text-2xl py-12 px-6 w-full md:w-900 md:h-329 text-justify" >
-        At Yugaas Tech, we take immense pride in our diverse and comprehensive service offerings, designed to empower businesses and individuals with transformative solutions. From technology consulting to HR management, our services are tailored to meet the unique needs of our clients, enabling them to thrive in an ever-changing digital landscape. With a perfect blend of innovation, expertise, and customer-centricity, we aim to be the go-to partner for organizations seeking to unlock their true potential.
-    </div>
-</div>
-<div class=":hidden  bg-blue-900 w-full md:w-auto h-auto sm:r-full " style=" height: 586px; flex-shrink: 0; background: #12192E;">
-  <div class="text-3xl md:text-4xl text-orange-500 font-krona text-4xl py-16  px-6 md:w-427 md:h-93 " style="color: #FFA500; width: 427px;  font-family: Krona One; font-size: 48px; font-style: normal; font-weight: 400; line-height: normal;">
-      Our Services
+
+<div class=" pt-6 pb-10 top-0 border-b shadow-sm  z-25 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
+  <div class="  pb-10 top-0 border-b shadow-sm  z-25 mx-2 md:mx-14 pt-6 items-center md:grid md:grid-cols-2">
+      <div class="">
+          <p class=" text-3xl md:text-5xl text-white bg-clip-text text-transparent flex justify-center font-bold " style="font-family: 'Ubuntu', sans-serif; text-shadow: 0px 1px 2px #333;" > Our<span class="  pl-2" style="color: #FFA500;"> Services </span></p>
+          <p class="pt-6 text-black text-base md:text-2xl text-center" style="font-family: 'Poppins', sans-serif;" >
+            At yugaastech, we take immense pride in our diverse and comprehensive service offerings, designed to empower businesses and individuals with transformative solutions. From technology consulting to HR management, our services are tailored to meet the unique needs of our clients, enabling them to thrive in an ever-changing digital landscape. With a perfect blend of innovation, expertise, and customer-centricity, we aim to be the go-to partner for organizations seeking to unlock their true potential.
+            </p>
+          {% comment %} <div class=" pt-8 flex justify-center md:justify-start" style="text-shadow: 2px 2px 4px #333;">
+              <a href="../About">
+              <input type="button" value="Learn More" class=" text-white text-xl font-medium text-center w-36 h-10 rounded-lg shadow border-2 border-white cursor-pointer hover:scale-105 transition-transform duration-150 ease-in-out" style="background-color: #374151; font-family: 'Poppins', sans-serif;" >
+              </a>
+              <a class="ml-10" href="../OurServices">
+              <input type="button" value="Services" class=" text-white text-xl font-medium text-center w-36 h-10 rounded-lg shadow border-2 border-white cursor-pointer hover:scale-105 transition-transform duration-150 ease-in-out" style="background-color: #374151; font-family: 'Poppins', sans-serif;">
+              </a>
+          </div> {% endcomment %}
+      </div>
+      <div class="hidden md:flex md:justify-center">
+          <img class="h-96 pl-24" src='../templates/images/service.png'/>
+      </div>
   </div>
-  <div class="text-xs md:text text-white font-krona text-2xl py-12 px-6 w-full md:w-900 md:h-329 pt-4" style="font-size: 20px;">
-      At Yugaas Tech, we take immense pride in our diverse and comprehensive service offerings, designed to empower businesses and individuals with transformative solutions. From technology consulting to HR management, our services are tailored to meet the unique needs of our clients, enabling them to thrive in an ever-changing digital landscape. With a perfect blend of innovation, expertise, and customer-centricity, we aim to be the go-to partner for organizations seeking to unlock their true potential.
+
+
+
+  <!-- 1 -->
+  <div class=" pt-6 pb-10 top-0 border-b shadow-sm  z-25">
+      <div class="mx-4 md:mx-12">
+          {% comment %} <p class="flex justify-center text-5xl text-blue-700  font-bold text-shadow-xs"style="text-shadow: 0px 1px 2px #333; font-family: 'Ubuntu', sans-serif;">Services</p> {% endcomment %}
+              <div class="flex flex-col-reverse lg:flex-row items-center justify-between">
+                  <div class=" flex-row items-center">
+                      <p class=" font-bold text-2xl flex justify-center md:justify-start  pt-10 md:text-4xl" style="font-family: 'Ubuntu', sans-serif;">Human Resource Management</p>
+                          <p class="text-base  pt-6 md:text-2xl" style="font-family: 'Poppins', sans-serif;">
+                            At yugaastech, we recognize that a well-managed and talented 
+                            workforce is the cornerstone of any successful organization. Our Human Resource Management as Service (HRMS) 
+                            is a comprehensive suite of solutions designed to optimize the entire spectrum of HR functions, from talent acquisition 
+                            to employee development. With a keen focus on innovation, efficiency, and employee well-being, our HRMS empowers businesses 
+                            to attract, nurture, and retain top talent, driving sustained growth and success.
+                          </p>
+                      </p>
+                      <div class="pt-6 flex justify-center lg:justify-start">
+                          <a href="../HumanResourceManagement">
+                              <input type="button" value="Learn More" class=" text-white text-xl font-medium text-center w-36 h-10 rounded-lg shadow border-2 border-white cursor-pointer hover:scale-105 transition-transform duration-150 ease-in-out" style="background-color: #374151; font-family: 'Poppins', sans-serif;" >
+                          </a>
+                      </div>
+                  </div>
+                  <img class=" rounded-3xl h-max w-auto md:w-4/12 mt-10 " src="../templates/images/hr1.png" alt="">
+              </div>
+      </div>
   </div>
-</div>
-
-<div class="text-blue-700 text-black dark:text-white text-3xl md:text-4xl text-center font-bold md:font-normal w-full md:w-72 h-16 md:h-12 flex-shrink-0 md:mt-12 mx-auto">
-  Services
-</div>
-<div class="text-black font-krona text-2xl md:text-3xl font-normal h-12 flex-shrink-0 md:p-0 text-center ">
-  Human Resource Management
-</div>
-
-
-    <div style="background-image: url('https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/HR.png?raw=true');" class=" text-white list-disc text-xl w-full bg-cover">
-      <div class=" md:flex gap-12 flex-direction: column ">
-      <div class="ml-12 pt-24 text-2xl leading-relaxed" >
-    
-          <li>Talent Acquisition Outsourcing (TAO)</li>
-        <li>Contingency Workforce Management as a Service</li>
-        <li>Staff Augmentation</li>
-        <li>Campus Hiring and Onboarding</li>
+      <!-- 2 -->
+      <div class="mt-6 pb-10 top-0 border-b shadow-sm z-25">
+          <div class="mx-4 md:mx-12">
+              <div class="flex flex-col-reverse md:flex-row-reverse items-center justify-between">
+                  <div class="  flex-row items-center">
+                      <p class="font-bold text-2xl flex justify-center md:justify-start md:text-4xl pt-10 "style="font-family: 'Ubuntu', sans-serif;" >Technology Services</p>
+                      <p class="pt-10 text-base md:text-2xl" style="font-family: 'Poppins', sans-serif;">
+                        Our Technology Services are designed to empower businesses with cutting-edge solutions that drive digital transformation and optimize operational efficiency. We understand that technology is the bedrock of success in today's fast-paced business landscape. With our strategic approach and innovative solutions, we help organizations harness the full potential of technology, stay ahead of the competition, and achieve their business objectives.
+                       </p>
+                      <div class="flex pt-6 justify-center lg:justify-start">
+                          <a href="../TechnologyServices">
+                              <input type="button" value="Learn More" class="text-white text-xl font-medium text-center w-36 h-10 rounded-lg shadow border-2 border-white cursor-pointer hover:scale-105 transition-transform duration-150 ease-in-out" style="background-color: #374151; font-family: 'Poppins', sans-serif;">
+                          </a>
+                      </div>
+                  </div>
+                  <img class="rounded-3xl h-max w-auto md:w-4/12 mt-10" src="../templates/images/ts1.png" alt="">
+              </div>
+          </div>
+      </div>
       
+      <!-- 3 -->
+      <div class=" mt-6 pb-10 top-0 border-b shadow-sm  z-25">
+          <div class="mx-4 md:mx-12">
+              <div class="flex flex-col-reverse md:flex-row items-center justify-between">
+                  <div class=" flex-row justify-center items-center">
+                      <p class="font-bold text-2xl flex justify-center md:justify-start md:text-4xl pt-10 "style="font-family: 'Ubuntu', sans-serif;" >Cyber Security Services</p>
+                      <p class=" pt-10 text-base md:text-2xl" style="font-family: 'Poppins', sans-serif;">
+                        Our Security Audit and Assurance service delivers independent assessments of our clients' security measures and practices. We conduct detailed audits to evaluate the effectiveness of their security controls and policies. Our audit reports provide valuable insights, enabling businesses to make data-driven decisions to improve their security posture and enhance overall risk management.
+                       </p>
+                          <div class="flex pt-6 justify-center lg:justify-start">
+                              <a href="../CyberSecurityServices">
+                                  <input type="button" value="Learn More" class=" text-white text-xl font-medium text-center w-36 h-10 rounded-lg shadow border-2 border-white cursor-pointer hover:scale-105 transition-transform duration-150 ease-in-out" style="background-color: #374151; font-family: 'Poppins', sans-serif;" >
+                              </a>
+                          </div>
+                      </div>
+                      <img class=" rounded-3xl h-max w-auto md:w-4/12 mt-10   " src="../templates/images/cs2.png" alt="">
+                  </div>
+          </div>
       </div>
-      <div style="border-radius: 30px; background: rgba(13, 25, 91, 0.50); " class=" flex-shrink-0 px-6 py-6 my-6 mx-6" data-aos="fade-up-left" data-aos-duration="500" data-aos-offset="500">
-        <div class="w-36 h-12 text-white text-3xl font-bold text-center pl-48">Register</div>
-        <div class=" flex gap-4">
-          <div>
-            <div class="h-7 text-white text-xl font-bold">First Name</div> <br>
-            <input type="text" name="firstname_services" id="firstname_services" class=" text-black pl-5 rounded-lg"/>
-          </div>
-          <div>
-            <div class="h-7 text-white text-xl font-bold">Last Name</div> <br>
-            <input type="text" name="lastname_services" id="lastname_services" class=" text-black pl-5 rounded-lg"/>
-          </div>
-        </div>
-        <div class=" flex gap-4">
-          <div>
-            <div class="h-7 text-white text-xl font-bold">Contact Number</div> <br>
-            <input type="number" name="contactnumber_services" id="contactnumber_services" class=" text-black pl-5 rounded-lg"/>
-          </div>
-          <div>
-            <div class="h-7 text-white text-xl font-bold">Email</div> <br>
-            <input type="email" name="email_services" id="email_services" class=" text-black pl-5 rounded-lg"/>
-          </div>
-        </div>
-        <div>
-          <div class="w-20 h-8 text-white text-xl font-bold"> Details</div>
-          <textarea name="details_services" id="details_services" cols="50" rows="3" class="rounded-lg mt-2" ></textarea>
-        </div>
-        <a class="w-24 h-8 px-2 py-0.5 rounded-md text-center ml-52 text-blue-800 hover:text-white" style="background-color: #D9D9D9;" href="">Register</a>
-      </div>
-      </div>
-      <a href="../HumanResourceManagement">
-        <input type="button" value="Learn More" class="text-yellow-600 text-xl font-bold text-center w-36 h-8 my-3 bg-black rounded-lg shadow border border-amber-500 cursor-pointer" style="margin-left: 45%;">
-      </a>
-    </div>
-    <!-- 2nd -->
-    <div class="text-black font-krona text-2xl font-normal h-12 flex-shrink-0 mt-32 mt-16 mb-7 md:mt-4" style="padding-left: 38.5%;">
-      Technology Services
-    </div>
 
-    <div style="background-image: url('https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/Technologyservices.png?raw=true');" class=" text-white list-disc text-xl w-full bg-cover">
-      <div class=" md:flex gap-12 flex-direction: column ">
-      <div class="ml-12 pt-24 text-2xl leading-relaxed" >
-    
-        <li>Infrastructure Management Services</li>
-        <li>Technology Platform Development</li>
-        <li>Technology Consulting</li>
-        <li>Virtual CXOs</li>
-        <li>IT Outsourcing and Managed Services</li>
-        <li>ITSM Services - Helpdesk, Customer Center</li>
+      <!-- 4 -->
+
+      <div class="mt-6 pb-10 top-0 border-b shadow-sm z-25">
+          <div class="mx-4 md:mx-12">
+              <div class="flex flex-col-reverse md:flex-row-reverse items-center justify-between">
+                  <div class="  flex-row items-center">
+                      <p class="font-bold text-2xl flex justify-center text-center md:justify-start md:text-4xl pt-10 "style="font-family: 'Ubuntu', sans-serif;" >Learning Academy & Finishing School</p>
+                      <p class=" pt-10 text-base md:text-2xl" style="font-family: 'Poppins', sans-serif;">
+                         We believe in nurturing talent and empowering individuals with the skills and knowledge they need to succeed in both their personal and professional lives. Our Learning Academy and Finishing School is a holistic and comprehensive program designed to cultivate a culture of continuous learning, personal development, and career growth. We offer a wide range of educational initiatives, from Induction and Orientation for Employees to specialized programs for students, covering essential life skills, aptitude, attitude, and more.
+                       </p>
+                      <div class="flex pt-6 justify-center lg:justify-start">
+                          <a href="../LearningAcademy">
+                              <input type="button" value="Learn More" class=" text-white text-xl font-medium text-center w-36 h-10 rounded-lg shadow border-2 border-white cursor-pointer hover:scale-105 transition-transform duration-150 ease-in-out" style="background-color: #374151; font-family: 'Poppins', sans-serif;" >
+                          </a>
+                      </div>
+                  </div>
+                  <img class=" rounded-3xl h-max w-auto md:w-4/12 mt-10   " src="../templates/images/la1.png" alt="">
+              </div>
+          </div>
+      </div>
+
       
-      </div>
-      <div style="border-radius: 30px; background: rgba(13, 25, 91, 0.50); " class=" flex-shrink-0 px-6 py-6 my-6 mx-6" data-aos="fade-up-left" data-aos-duration="500" data-aos-offset="500">
-        <div class="w-36 h-12 text-white text-3xl font-bold text-center pl-48">Register</div>
-        <div class=" flex gap-4">
-          <div>
-        
-              <div class="h-7 text-white text-xl font-bold">First Name</div> <br>
-              <input type="text" name="firstname_services" id="firstname_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Last Name</div> <br>
-              <input type="text" name="lastname_services" id="lastname_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-          </div>
-          <div class=" flex gap-4">
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Contact Number</div> <br>
-              <input type="number" name="contactnumber_services" id="contactnumber_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Email</div> <br>
-              <input type="email" name="email_services" id="email_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-          </div>
-          <div>
-            <div class="w-20 h-8 text-white text-xl font-bold"> Details</div>
-            <textarea name="details_services" id="details_services" cols="50" rows="3" class="rounded-lg mt-2" ></textarea>
-          </div>
-          <a class="w-24 h-8 px-2 py-0.5 rounded-md text-center ml-52 text-blue-800 hover:text-white" style="background-color: #D9D9D9;" href="">Register</a>
+        <div class="mx-2 md:mx-14 pt-10">
+            <p class="text-xl md:text-3xl text-black flex justify-center" style="font-family: 'Poppins', sans-serif;">
+                At yugaastech, we believe that excellence is not a destination, but a journey. 
+            Our services are designed to be agile, scalable, and adaptable, ensuring that we can cater to the unique needs of businesses across 
+            industries.
+            </p>
+            <p class="text-xl md:text-3xl pt-6 text-black bg-clip-text text-transparent flex justify-center" style="font-family: 'Poppins', sans-serif;">
+                By leveraging technology, innovation, and an unwavering commitment to quality, 
+                we empower our clients to achieve remarkable success and thrive in a rapidly evolving world. Experience the Power of Empowerment.
+            </p>
+            <p class="text-2xl md:text-3xl bg-gradient-to-r from-blue-700 via-blue-400 to-blue-700 bg-clip-text text-center text-transparent pt-6 font-bold flex justify-center" style="font-family: 'Ubuntu', sans-serif;">
+                "Explore Our Comprehensive Services at Yugaas Tech, 
+            and Let's Shape Your Future Together."
+            </p>
         </div>
-        </div>
-        <a href="../TechnologyServices">
-          <input type="button" value="Learn More" class="text-yellow-600 text-xl font-bold text-center w-36 h-8 my-3 bg-black rounded-lg shadow border border-amber-500 cursor-pointer" style="margin-left: 45%;"/>
-        </a>
     </div>
-  
-      <!-- <div style="background-image: url('https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/Technologyservices.png?raw=true');" class=" text-white list-disc text-xl w-full bg-cover">
-        <div class=" flex gap-12 flex-direction: column">
-        <div class="ml-12 pt-24 text-2xl leading-relaxed">
-          <li>Infrastructure Management Services</li>
-          <li>Technology Platform Development</li>
-          <li>Technology Consulting</li>
-          <li>Virtual CXOs</li>
-          <li>IT Outsourcing and Managed Services</li>
-          <li>ITSM Services - Helpdesk, Customer Center</li>
-        </div>
 
-        
-        <div style="border-radius: 30px; background: rgba(13, 25, 91, 0.50);" class=" flex-shrink-0 px-6 py-6 my-6 mx-6" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="500">
-          <div class="w-36 h-12 text-white text-3xl font-bold text-center pl-48">Register</div>
-          <div class=" flex gap-4">
-            <div>
-              <div class="h-7 text-white text-xl font-bold">First Name</div> <br>
-              <input type="text" name="firstname_services" id="firstname_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Last Name</div> <br>
-              <input type="text" name="lastname_services" id="lastname_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-          </div>
-          <div class=" flex gap-4">
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Contact Number</div> <br>
-              <input type="number" name="contactnumber_services" id="contactnumber_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Email</div> <br>
-              <input type="email" name="email_services" id="email_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-          </div>
-          <div>
-            <div class="w-20 h-6 text-white text-xl font-bold"> Details</div>
-            <textarea name="details_services" id="details_services" cols="50" rows="3" class="rounded-lg mt-2" ></textarea>
-          </div>
-          <a class="w-24 h-8 px-2 py-0.5 rounded-md text-center ml-52 text-blue-800 hover:text-white" style="background-color: #D9D9D9;" href="">Register</a>
-        </div>
-        </div>
-        <a href="../TechnologyServices">
-          <input type="button" value="Learn More" class="text-yellow-600 text-xl font-bold text-center w-36 h-8 my-3 bg-black rounded-lg shadow border border-amber-500 cursor-pointer" style="margin-left: 45%;"/>
-        </a>
-      </div> -->
-    <!-- 2 end -->
-    <!-- 3rd -->
-    <div class="text-black font-krona text-2xl md:text-3xl font-normal h-12 flex-shrink-0 md:p-0 text-center mt-16 mb-7 md:mt-4">
-      Cyber Security Services
-    </div>
-      <div style="background-image: url('https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/cyber.png?raw=true');" class=" text-white list-disc text-xl w-full bg-cover">
-        <div class=" md:flex gap-12 flex-direction: column ">
-          <div class="ml-12 pt-24 text-2xl leading-relaxed" >
-            <li>Security Advisory and Roadmap</li>
-            <li>Security Technology Management</li>
-            <li>Security Testing (VAPT, Red Teaming, etc.)</li>
-            <li>Governance, Risk, and Compliance</li>
-            <li>End to End Managed Security Services</li>
-            <li>Security Audit and Assurance</li>
-          </div>
-        <div style="border-radius: 30px; background: rgba(13, 25, 91, 0.50); " class=" flex-shrink-0 px-6 py-6 my-6 mx-6" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="500">
-          <div class="w-36 h-12 text-white text-3xl font-bold text-center pl-48">Register</div>
-          <div class=" flex gap-4">
-            <div>
-              <div class="h-7 text-white text-xl font-bold">First Name</div> <br>
-              <input type="text" name="firstname_services" id="firstname_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Last Name</div> <br>
-              <input type="text" name="lastname_services" id="lastname_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-          </div>
-          <div class=" flex gap-4">
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Contact Number</div> <br>
-              <input type="number" name="contactnumber_services" id="contactnumber_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Email</div> <br>
-              <input type="email" name="email_services" id="email_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-          </div>
-          <div>
-            <div class="w-20 h-8 text-white text-xl font-bold"> Details</div>
-            <textarea name="details_services" id="details_services" cols="50" rows="3" class="rounded-lg mt-2" ></textarea>
-          </div>
-          <a class="w-24 h-8 px-2 py-0.5 rounded-md text-center ml-52 text-blue-800 hover:text-white" style="background-color: #D9D9D9;" href="">Register</a>
-        </div>
-        </div>
-        <a href="../CyberSecurityServices">
-          <input type="button" value="Learn More" class="text-yellow-600 text-xl font-bold text-center w-36 h-8 my-3 bg-black rounded-lg shadow border border-amber-500 cursor-pointer" style="margin-left: 45%;"/>
-        </a>
-      </div>
-    <!-- 3 end -->
-    <!-- 4th -->
-    <div class="text-black font-krona text-2xl md:text-3xl font-normal h-12 flex-shrink-0 md:p-0 text-center mt-16 mb-7 md:mt-4">
-      Learning Academy & Finishing School
-    </div>
-    <div class="bg-gradient-to-l from-gray-700 via-gray-900 to-black">
-      <div style="background-image: url('https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/learningacademy.png?raw=true');" class=" text-white list-disc text-xl l bg-cover">
-        <div class=" md:flex gap-12 flex-direction: column ">
-          <div class="ml-12 pt-24 text-2xl leading-relaxed" >
-          <li>Induction and Orientation for Employees</li>
-          <li>Awareness Programs</li>
-          <li>Leadership School and Grooming</li>
-          <li>Dedicated Learning Academy for Students</li>
-        </div>
-<!-- 
-        <div style="border-radius: 30px; background: rgba(13, 25, 91, 0.50);" class=" flex-shrink-0 px-6 py-6 my-6 mx-6" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="500">
-          <div class="w-36 h-12 text-white text-3xl font-bold text-center pl-48">Register</div>
-          <div class=" flex gap-4"> -->
-
-
-        <div style="border-radius: 30px; background: rgba(13, 25, 91, 0.50); " class=" flex-shrink-0 px-6 py-6 my-6 mx-6" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="500">
-          <div class="w-36 h-12 text-white text-3xl font-bold text-center pl-48">Register</div>
-          <div class=" flex gap-4">
-            <div>
-              <div class="h-7 text-white text-xl font-bold">First Name</div> <br>
-              <input type="text" name="firstname_services" id="firstname_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Last Name</div> <br>
-              <input type="text" name="lastname_services" id="lastname_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-          </div>
-          <div class=" flex gap-4">
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Contact Number</div> <br>
-              <input type="number" name="contactnumber_services" id="contactnumber_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-            <div>
-              <div class="h-7 text-white text-xl font-bold">Email</div> <br>
-              <input type="email" name="email_services" id="email_services" class=" text-black pl-5 rounded-lg"/>
-            </div>
-          </div>
-          <div>
-            <div class="w-20 h-8 text-white text-xl font-bold"> Details</div>
-            <textarea name="details_services" id="details_services" cols="50" rows="3" class="rounded-lg mt-2" ></textarea>
-          </div>
-          <a class="w-24 h-8 px-2 py-0.5 rounded-md text-center ml-52 text-blue-800 hover:text-white" style="background-color: #D9D9D9;" href="">Register</a>
-        </div>
-        </div>
-        <a href="../LearningAcademy">
-          <input type="button" value="Learn More" class="text-yellow-600 text-xl font-bold text-center w-36 h-8 my-3 bg-black rounded-lg shadow border border-amber-500 cursor-pointer" style="margin-left: 45%;"/>
-        </a>
-      </div>
-      </div>
-    <!-- 4 end -->
-<div class="text-black font-krona text-2xl md:text-3xl font-normal h-12 flex-shrink-0 md:p-0 text-center mt-16 mb-7 md:mt-4 ">
-      Method of Hiring &  Talent Retention
-    </div>
-    <div style="background-image: url('https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/hiring.png?raw=true');" class=" mt-16 mb-0">
-      
-      <div class="text-white text-xl font-normal pt-12 pb-12 px-32 pb-20 md:-ml-8 -mr-8 " style="margin-left: -9%;margin-right: -12%;"> 
-         We take a strategic approach to hiring and talent retention, 
-        ensuring our clients find and keep the right talent for their organizations. 
-        Our Method of Hiring includes Structured Interviews with our CXO Panel for Senior and Critical Roles, 
-        Transformation of New Hires, Employee Wellness Programs, Transparent Salary Structure, and Rewards and Recognition.
-      </div>
-        </div>
-        
-        </div>
-      </div>
-    </div>
-    <div class="text-black text-xl font-normal pt-12 px-32 pb-20 md:-ml-8 -mr-8 " style="margin-left: -9%;margin-right: -12%;">Community and Academic Engagements: We actively engage with leading institutions 
-      and students through our Exclusive Research and Innovation Centers. Students participate in research, technology discussions, 
-      and non-invasive customer testing. We offer Whitepapers, Proof of Concepts, Internship Opportunities, Hackathons, 
-      Student Mentoring Programs, and more.
-    </div>
-    <!-- <img src="https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/services.png?raw=true" alt="services" class=" bg-cover bg-no-repeat mt-80"> -->
-    <div  style="background-image: url('https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/exploreour.png?raw=true');">
-      <div class=" md:flex flex-direction: column pt-24 px-10 gap-10 " style="margin-bottom: -20%;">
-        <div class="text-white text-lg font-bold" style="padding-bottom: -2%;">
-          At Yugaas Tech, we believe that excellence is not a destination, but a journey. 
-          Our services are designed to be agile, scalable, and adaptable, ensuring that we can cater to the unique needs of businesses across 
-          industries.
-        </div> <br>
-        <div class="text-white text-lg font-bold">
-          By leveraging technology, innovation, and an unwavering commitment to quality, 
-          we empower our clients to achieve remarkable success and thrive in a rapidly evolving world.<br/>Experience the Power of Empowerment.
-        </div>
-      </div>
-        <div class="text-white text-xl font-bold mt-80 pb-20 text-center -pt-8" style="padding-top: -45%;" >
-          Explore Our Comprehensive Services at Yugaas Tech, 
-          and Let's Shape Your Future Together.
-        </div>
-    </div>
       {% include 'footer.html' %}
 </body>
 </html>
