@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
     <link rel = "icon" href = "https://github.com/Deepakraja03/yugaastech/blob/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/Logo.png?raw=true" type = "image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
+
     <title>yugaastech</title>
 </head>
 <body>
@@ -15,16 +16,16 @@
         <nav class="flex items-center justify-between mx-4">
             <!-- left -->
             <div class="flex items-center space-x-4 pt-3">
-                <img class="h-20 cursor-pointer" src="../templates/images/ygt1.png" alt="logo">
+                <img class="h-20 cursor-pointer" src="https://raw.githubusercontent.com/Deepakraja03/yugaastech/16e3749c547b31ea9ad97a3f812044b41c3e2d95/templates/images/Logo.jpg?raw=true" alt="logo">
                 <p class=" hidden md:inline font-bold pb-4 text-3xl text-blue-800 ">yugaas<span class=" font-bold" style="color: #FFA500;">tech</span></p>
             </div>
             <ul class="hidden lg:inline text-lg font-bold px-10">
                 <div class="md:flex">
-                    <li class="px-3 py-1"><a href="../Home">Home</a></li>
+                    <li class="py-1"><a href="../Home">Home</a></li>
                     <li class="px-3 py-1"><a href="../About"> About Us</a></li>
                     <li class="px-3 py-1"><a href="../OurServices">Our Services</a></li>
                     <li class="px-3 py-1"><a href="../Career">Careers</a></li>
-                    <li class="px-3 underline hover:scale-110 transition-shadow duration-150 ease-out py-1" style="color: #FFA500;"><a href="../Contactus">Contact Us</a></li>
+                    <li class="underline hover:scale-110 transition-shadow duration-150 ease-out py-1" style="color: #FFA500;"><a href="../Contactus">Contact Us</a></li>
                 </div>
             </ul>
             <!-- mobile burger icon -->
@@ -35,50 +36,54 @@
             </div>
         </nav>
     </div>
-    
+
     <!-- Background overlay for mobile menu (100px from the top) -->
     <div id="bg-overlay" class="fixed top-0 left-0 right-0 bg-white opacity-0 transition-opacity duration-300 h-[100hv] lg:bg-transparent lg:pt-0"></div>
-    
+
     <!-- Mobile menu links with black text (initially displayed on lg:screen) -->
-    <ul id="menu-list-mobile" class="pt-32 flex-col text-lg font-bold px-10 absolute top-0 left-0 right-0 h-screen bg-white transform -translate-y-[500hv] transition-transform duration-300 hidden">
+    <ul id="menu-list-mobile" class="pt-32 flex-col text-lg font-bold px-10 absolute top-0 left-0 right-0 h-screen bg-white transform -translate-y-[500hv] transition-transform duration-300 hidden" style="font-family: 'Poppins', sans-serif;">
         <li class="py-1"><a href="../Home">Home</a></li>
         <li class="py-1"><a href="../About"> About Us</a></li>
-        <li class="py-1"><a href="../OurServices">Our Services</a></li>
+        <li class="px-3 py-1"><a href="../OurServices">Our Services</a></li>
         <li class="py-1"><a href="../Career">Careers</a></li>
         <li class="underline hover:scale-110 transition-shadow duration-150 ease-out py-1" style="color: #FFA500;"><a href="../Contactus">Contact Us</a></li>
     </ul>
-    
+
     <script>
         const mobileMenuButton = document.getElementById("mobile-menu-button");
         const menuListMobile = document.getElementById("menu-list-mobile");
         const bgOverlay = document.getElementById("bg-overlay");
         const burgerIcon = document.querySelector(".burger");
         let isOpen = false;
-    
+
         mobileMenuButton.addEventListener("click", () => {
             isOpen = !isOpen;
             if (isOpen) {
                 // Change the icon to a cross (X)
-                burgerIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+                burgerIcon.innerHTML = <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>;
                 // Show the mobile menu and set the background color to white
                 menuListMobile.classList.remove("hidden");
+                menuListMobile.classList.add("translate-y-0");
                 bgOverlay.classList.remove("opacity-0");
                 // Scroll to the top of the page
                 window.scrollTo(0, 0);
             } else {
                 // Change the icon back to a burger
-                burgerIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+                burgerIcon.innerHTML = <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>;
                 // Hide the mobile menu and reset the background color
                 menuListMobile.classList.add("hidden");
+                menuListMobile.classList.remove("translate-y-0");
                 bgOverlay.classList.add("opacity-0");
             }
         });
     </script>
     <!-- navbar close -->
         <!-- landing content -->
+<div class=" bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100" style="font-family: 'Poppins', sans-serif;">
+
         <div class=" pt-4">
             {% comment %} <p class=" text-blue-800 text-shadow-xs flex justify-center text-7xl font-bold tracking-wide "> Contact Us</p> {% endcomment %}
-            <div class=" font-bold text-center pt-5 text-5xl">
+            <div class=" font-bold text-center pt-5 text-5xl" style="font-family: 'Ubuntu', sans-serif; text-shadow: 0px 1px 2px #333;">
                 <h1>Contact US</h1>
               </div>
               <div class="text-2xl pt-10 text-center md:text-left md:pl-28 font-semibold">
@@ -95,7 +100,7 @@
                                     <h1>First name</h1>
                                 </div>
                                 <div class="text-md pl-5 md:pl-28 pt-2">
-                                    <input type="text" class="h-12 w-60 pl-3 rounded-lg bg-[#3f4360]" placeholder="Your First Name" style="background-color: #3f4360;">
+                                    <input type="text" class="h-12 w-60 text-white pl-3 rounded-lg bg-[#3f4360]" placeholder="Your First Name" style="background-color: #3f4360;">
                                 </div>
                     </div>
                     <div>
@@ -103,7 +108,7 @@
                             <h1>Last name</h1>
                         </div>
                         <div class="text-md pl-5 md:pl-28 pt-2">
-                            <input type="text" class="h-12 pl-3 w-60 rounded-lg" placeholder="Your First Name" style="background-color: #3f4360;">
+                            <input type="text" class="h-12 pl-3 w-60 text-white rounded-lg" placeholder="Your First Name" style="background-color: #3f4360;">
                         </div>
                     </div>
                 </div>
@@ -113,7 +118,7 @@
               <h1>Mail</h1>
             </div>
             <div class="text-md pl-5 md:pl-28 pt-2">
-                <input type="text" class="h-12 w-60 pl-3 rounded-lg" placeholder="Your  Mail" style="background-color: #3f4360;">
+                <input type="text" class="h-12 w-60 pl-3 text-white rounded-lg" placeholder="Your  Mail" style="background-color: #3f4360;">
             </div>
         </div>
         <div>
@@ -121,7 +126,7 @@
                 <h1>Phone</h1>
             </div>
             <div class="text-md pl-5 md:pl-28 pt-2">
-                <input type="text" class="h-12 pl-3 w-60 rounded-lg" placeholder="+91  " style="background-color: #3f4360;">
+                <input type="text" class="h-12 pl-3 w-60 text-white rounded-lg" placeholder="+91  " style="background-color: #3f4360;">
             </div>
         </div>
     </div>
@@ -129,7 +134,7 @@
         <h1>Message</h1>
     </div>
     <div class="text-md pl-5 md:pl-28 pt-10">
-        <input type="text" class="h-28 md:h-40 w-80 md:w-96 pl-10 pb-10 rounded-lg" placeholder="Type your message here" style="background-color: #3f4360;">
+        <input type="text" class="h-28 md:h-40 w-80 text-white md:w-96 pl-10 pb-10 rounded-lg" placeholder="Type your message here" style="background-color: #3f4360;">
     </div>
 </div>
 <div class="mx-5 md:mx-28 pt-24">
@@ -156,7 +161,7 @@
         </div>
     </div>
     <div  class="pl-28 pt-5 md:pt-10 pb-20">
-        <button class="rounded-xl h-10 w-32" style="background-color: #FFA500;">Send Message</button>
+        <button class="text-white text-base text-center w-36 h-10 rounded-lg shadow border-2 border-white cursor-pointer hover:scale-105 transition-transform duration-150 ease-in-out" style="background-color: #374151; ">Send Message</button>
     </div>
     <p class=" text-2xl font-medium text-center mx-5 pt-10"> Thank you for your interest in yugaastech! We value your inquiries, feedback, and collaboration opportunities. Feel free to get in touch with us using the following contact information, and we'll be delighted to assist you.</p>
     
@@ -172,9 +177,10 @@
         </div>
     </div> {% endcomment %}
 
-    <div class="pt-10">
+    {% comment %} <div class="pt-10">
         
-    </div>
+    </div> {% endcomment %}
+</div>
     {% include 'footer.html' %}
 </body>
 </html>
